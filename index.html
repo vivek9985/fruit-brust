@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Fruit Brust</title>
+    <!-- tailwind and daisy cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body class="lato">
+
+    <header class="w-11/12 mx-auto lg:flex lg:w-10/12">
+        <div class="navbar bg-[#F85559] w-full justify-between rounded-full py-3 mt-9">
+            <div class="text-white text-lg font-medium ml-5 hidden lg:w-4/12 lg:flex lg:pl-5">
+                <ul class="flex">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                </ul>
+            </div>
+            <div class=" w-1/2 pl-3 navbar-center lg:w-4/12 flex items-center lg:justify-center">
+                <a href="">
+                    <img src="./images/logo.png" alt="logo" class="w-12">
+                    <a href="" class="text-3xl lg:text-white font-bold cursor-pointer ml-2">Fruit Brust</a>
+                </a>
+            </div>
+            <div class="w-1/2 pr-3 flex justify-end navbar-start lg:hidden lg:w-4/12">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40 right-3">
+                        <li class="mr-4"><a href="">Home</a></li>
+                        <li class="mr-4"><a href="">About Us</a></li>
+                        <li class="mr-4"><a href="">Shop</a></li>
+                        <li class="mr-4"><a href="">All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-end w-4/12 hidden lg:flex pr-5 items-center">
+                <div class="bg-white flex items-center justify-center rounded-full py-2 px-3">
+                    <input type="text" placeholder="Search here" class="outline-none w-[250px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
