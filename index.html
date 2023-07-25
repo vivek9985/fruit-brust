@@ -12,18 +12,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- css style -->
     <style>
         .lato{
             font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
+
 <body class="lato">
 
-    <header class="w-11/12 mx-auto lg:flex lg:w-10/12">
-        <div class="navbar bg-[#F85559] w-full justify-between rounded-full py-3 mt-9">
-            <div class="text-white text-lg font-medium ml-5 hidden lg:w-4/12 lg:flex lg:pl-5">
-                <ul class="flex">
+    <!-- Header section start here -->
+    <header class="w-11/12 mx-auto lg:w-10/12">
+        <!-- Navbar section start here -->
+        <section class="navbar bg-[#F85559] w-full justify-between rounded-full py-3 mt-9">
+            <div class="text-white lg:text-base xl:text-lg font-medium lg:ml-3 xl:ml-5 hidden lg:w-4/12 lg:flex lg:pl-5">
+                <ul class="flex lg:space-x-3 xl:space-x-5">
                     <li><a href="">Home</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Shop</a></li>
@@ -32,8 +36,8 @@
             </div>
             <div class=" w-1/2 pl-3 navbar-center lg:w-4/12 flex items-center lg:justify-center">
                 <a href="">
-                    <img src="./images/logo.png" alt="logo" class="w-12">
-                    <a href="" class="text-3xl lg:text-white font-bold cursor-pointer ml-2">Fruit Brust</a>
+                    <img src="./images/logo.png" alt="logo" class="w-10 lg:w-12">
+                    <a href="" class="text-2xl lg:text-3xl lg:text-white font-bold cursor-pointer ml-2">Fruit Brust</a>
                 </a>
             </div>
             <div class="w-1/2 pr-3 flex justify-end navbar-start lg:hidden lg:w-4/12">
@@ -41,22 +45,60 @@
                     <label tabindex="0" class="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40 right-3">
-                        <li class="mr-4"><a href="">Home</a></li>
-                        <li class="mr-4"><a href="">About Us</a></li>
-                        <li class="mr-4"><a href="">Shop</a></li>
-                        <li class="mr-4"><a href="">All Fruits</a></li>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-40 right-3">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
                     </ul>
                 </div>
             </div>
             <div class="navbar-end w-4/12 hidden lg:flex pr-5 items-center">
                 <div class="bg-white flex items-center justify-center rounded-full py-2 px-3">
-                    <input type="text" placeholder="Search here" class="outline-none w-[250px]">
+                    <input type="text" placeholder="Search here" class="outline-none xl:w-[250px] pl-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- Navbar section end here -->
+
+        <!-- Banner section start here -->
+        <section class="mt-12">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./images/banner1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./images/banner2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./images/banner3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="./images/banner4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- Banner section end here -->
     </header>
+    <!-- Header section end here -->
+
 
     <main>
 
